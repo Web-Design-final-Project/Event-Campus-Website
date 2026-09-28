@@ -264,74 +264,73 @@
             </div>
         </div>
         
+<!-- ============ Favorites ============ -->
+<div class="hidden peer-checked/favorites:block">
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
 
-        <!-- ============ Favorites ============ -->
-        <div class="hidden peer-checked/favorites:block">
-            <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-                <article
-                    class="rounded-2xl border border-gray-200 bg-white overflow-hidden hover:shadow-md transition-shadow">
-                    <div
-                        class="relative h-36 bg-gradient-to-br from-purple-50 to-purple-100 flex items-center justify-center">
-                        <span
-                            class="absolute top-3 left-3 text-xs font-medium bg-white/90 text-gray-700 px-2.5 py-1 rounded-full">Social</span>
-                        <input type="checkbox" id="mfav-1" class="peer/fav1 hidden" checked />
-                        <label for="mfav-1"
-                            class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/90 flex items-center justify-center text-gray-400 peer-checked/fav1:text-rose-500 cursor-pointer"
-                            aria-label="Unsave Battle of the Bands">
-                            <span class="material-symbols-outlined text-[19px]">favorite</span>
-                        </label>
-                        <span class="material-symbols-outlined text-5xl text-purple-300">celebration</span>
-                    </div>
-                    <div class="p-5">
-                        <h3 class="text-lg font-semibold">Battle of the Bands</h3>
-                        <div class="mt-2 space-y-1 text-sm text-gray-500">
-                            <div class="flex items-center gap-1.5"><span
-                                    class="material-symbols-outlined text-[17px]">calendar_month</span>Oct 24, 2026
-                            </div>
-                            <div class="flex items-center gap-1.5"><span
-                                    class="material-symbols-outlined text-[17px]">location_on</span>Main Quad</div>
-                        </div>
-                        <p class="mt-2 text-sm text-gray-400">Organized by Music Society</p>
-                        <a href="event-details.html"
-                            class="mt-4 block text-center text-sm font-medium border border-gray-300 text-gray-700 rounded-lg px-3 py-1.5 hover:bg-gray-50">View
-                            Details</a>
-                    </div>
-                </article>
-             
-
-                <article
-                    class="rounded-2xl border border-gray-200 bg-white overflow-hidden hover:shadow-md transition-shadow">
-                    <div
-                        class="relative h-36 bg-gradient-to-br from-purple-50 to-purple-100 flex items-center justify-center">
-                        <span
-                            class="absolute top-3 left-3 text-xs font-medium bg-white/90 text-gray-700 px-2.5 py-1 rounded-full">Club
-                            Activity</span>
-                        <input type="checkbox" id="mfav-2" class="peer/fav2 hidden" checked />
-                        <label for="mfav-2"
-                            class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/90 flex items-center justify-center text-gray-400 peer-checked/fav2:text-rose-500 cursor-pointer"
-                            aria-label="Unsave Photography Walk: Riverside">
-                            <span class="material-symbols-outlined text-[19px]">favorite</span>
-                        </label>
-                        <span class="material-symbols-outlined text-5xl text-purple-300">photo_camera</span>
-                    </div>
-                    <div class="p-5">
-                        <h3 class="text-lg font-semibold">Photography Walk: Riverside</h3>
-                        <div class="mt-2 space-y-1 text-sm text-gray-500">
-                            <div class="flex items-center gap-1.5"><span
-                                    class="material-symbols-outlined text-[17px]">calendar_month</span>Oct 18, 2026
-                            </div>
-                            <div class="flex items-center gap-1.5"><span
-                                    class="material-symbols-outlined text-[17px]">location_on</span>Meet at Main Gate
-                            </div>
-                        </div>
-                        <p class="mt-2 text-sm text-gray-400">Organized by Photography Club</p>
-                        <a href="event-details.html"
-                            class="mt-4 block text-center text-sm font-medium border border-gray-300 text-gray-700 rounded-lg px-3 py-1.5 hover:bg-gray-50">View
-                            Details</a>
-                    </div>
-                </article>
+        <article class="flex flex-col rounded-2xl border border-gray-200 bg-white overflow-hidden hover:shadow-md transition-shadow">
+            <div class="relative h-56">
+                <img src="../src/assets/mi.jpg" alt="Battle of the Bands" loading="lazy"
+                    class="absolute inset-0 w-full h-full object-cover" />
+                <span
+                    class="absolute top-3 left-3 text-xs font-medium bg-white/90 text-gray-700 px-2.5 py-1 rounded-full">Social</span>
+                <input type="checkbox" id="mfav-1" class="peer/fav1 hidden" checked />
+                <label for="mfav-1"
+                    class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/90 flex items-center justify-center text-gray-400 peer-checked/fav1:text-rose-500 cursor-pointer"
+                    aria-label="Unsave Battle of the Bands">
+                    <span class="material-symbols-outlined text-[19px]">favorite</span>
+                </label>
             </div>
-        </div>
+            <div class="p-5 flex flex-col flex-1">
+                <h3 class="text-lg font-semibold">Battle of the Bands</h3>
+                <div class="mt-2 space-y-1 text-sm text-gray-500">
+                    <div class="flex items-center gap-1.5"><span
+                            class="material-symbols-outlined text-[17px]">calendar_month</span>Oct 24, 2026</div>
+                    <div class="flex items-center gap-1.5"><span
+                            class="material-symbols-outlined text-[17px]">location_on</span>Main Quad</div>
+                </div>
+                <p class="mt-2 text-sm text-gray-400">Organized by Music Society</p>
+                <div class="mt-auto pt-4">
+                    <a href="event-details.html"
+                        class="block text-center text-sm font-medium border border-gray-300 text-gray-700 rounded-lg px-3 py-1.5 hover:bg-gray-50">View
+                        Details</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="flex flex-col rounded-2xl border border-gray-200 bg-white overflow-hidden hover:shadow-md transition-shadow">
+            <div class="relative h-56">
+                <img src="../src/assets/Riverside.jpg" alt="Photography Walk: Riverside" loading="lazy"
+                    class="absolute inset-0 w-full h-full object-cover" />
+                <span
+                    class="absolute top-3 left-3 text-xs font-medium bg-white/90 text-gray-700 px-2.5 py-1 rounded-full">Club
+                    Activity</span>
+                <input type="checkbox" id="mfav-2" class="peer/fav2 hidden" checked />
+                <label for="mfav-2"
+                    class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/90 flex items-center justify-center text-gray-400 peer-checked/fav2:text-rose-500 cursor-pointer"
+                    aria-label="Unsave Photography Walk: Riverside">
+                    <span class="material-symbols-outlined text-[19px]">favorite</span>
+                </label>
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+                <h3 class="text-lg font-semibold">Photography Walk: Riverside</h3>
+                <div class="mt-2 space-y-1 text-sm text-gray-500">
+                    <div class="flex items-center gap-1.5"><span
+                            class="material-symbols-outlined text-[17px]">calendar_month</span>Oct 18, 2026</div>
+                    <div class="flex items-center gap-1.5"><span
+                            class="material-symbols-outlined text-[17px]">location_on</span>Meet at Main Gate</div>
+                </div>
+                <p class="mt-2 text-sm text-gray-400">Organized by Photography Club</p>
+                <div class="mt-auto pt-4">
+                    <a href="event-details.html"
+                        class="block text-center text-sm font-medium border border-gray-300 text-gray-700 rounded-lg px-3 py-1.5 hover:bg-gray-50">View
+                        Details</a>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</div>
 
         <!-- ============ Empty state (reference — shown when a tab has no events) ============ -->
         <div class="hidden flex-col items-center text-center gap-3 py-16" id="no-events-example">
